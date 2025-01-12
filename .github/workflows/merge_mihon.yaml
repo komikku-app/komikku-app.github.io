@@ -1,0 +1,35 @@
+name: Merge Mihon
+
+on:
+  schedule:
+    - cron: "0 0 */7 * *"
+  workflow_dispatch: # Manual dispatch
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  auto-merge:
+    name: Merge Mihon
+    if: github.repository == 'komikku-app/komikku-app.github.io'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merging
+        run: |
+          git remote add mihon https://github.com/mihonapp/website.git
+          git fetch mihon
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git merge -S --no-edit mihon/main
+
+      - name: Push to repo
+        run: |
+          git push
