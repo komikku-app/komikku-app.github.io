@@ -15,10 +15,10 @@ Here's how to tackle common challenges.
 * Temporarily switch download location from SD card, then revert and restart the app.
 * Long filenames trigger this. Android file manager doesn't support **>255** characters.
   * If known, shorten the file/folder name via computer when SD card is connected.
-* Else, delete **Mihon** downloads folder on SD card.
+* Else, delete **Komikku** downloads folder on SD card.
 
 ### Storage issues with Android 11+
-See [this section](/docs/faq/storage) of the FAQ to learn how Scoped Storage affects **Mihon** in **Android 11+** and how to fix it.
+See [this section](/docs/faq/storage) of the FAQ to learn how Scoped Storage affects **Komikku** in **Android 11+** and how to fix it.
 
 ### Slow loading
 Sources being slow could stem from site slowness, your internet, or source-imposed rate limits/IP bans.
@@ -75,7 +75,7 @@ Try these solutions:
 Storage-related error causes:
 
 * Storage full, check device/SD Card.
-* Grant **Mihon** SD card access in Android settings.
+* Grant **Komikku** SD card access in Android settings.
 * Download folder access issues, validate paths.
 * Corrupted or inaccessible writing drive, verify using a file manager.
 

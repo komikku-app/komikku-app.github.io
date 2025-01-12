@@ -6,7 +6,7 @@ description: Backups helps you prevent losing your library if something happens.
 
 # Backups
 
-Backups in **Mihon** are compatible between different versions of the app.
+Backups in **Komikku** are compatible between different versions of the app.
 
 ::: tip How to create a backup
 1. Go to <nav to="data-and-storage">.
@@ -36,7 +36,7 @@ Backups in **Mihon** are compatible between different versions of the app.
 - **Custom covers**
 
 ::: tip
-To convert your backups to JSON or to view and edit the information outside of the app, you can use [Mihon Backup Viewer](https://github.com/Animeboynz/Mihon-Backup-Viewer).
+To convert your backups to JSON or to view and edit the information outside of the app, you can use [Komikku Backup Viewer](https://github.com/Animeboynz/Mihon-Backup-Viewer).
 :::
 
 ## Restoring a backup
@@ -50,7 +50,7 @@ To ensure a smooth restoration process, remember to:
 Before starting to import the selected backup, the app will remind the user of these.
 
 ### Transferring downloads to a new installation
-You can transfer downloaded series chapters from one version of **Mihon** to another
+You can transfer downloaded series chapters from one version of **Komikku** to another
 by correctly specifying the Download Location.
 
 ## Suggestions for backups
@@ -69,7 +69,7 @@ This way, you can recover from catastrophic failures.
 :::
 
 ### Syncing backups with external cloud services
-Cross device sync in **Mihon** is not currently available, but users can use
+Cross device sync in **Komikku** is not currently available, but users can use
 [Autosync for Google Drive](https://play.google.com/store/apps/details?id=com.ttxapps.drivesync)
 in order to sync backup files to Drive automatically with the following steps:
 
@@ -86,16 +86,16 @@ or [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.
 This section explores some extra details regarding [forks](/forks/).
 :::
 
-All **Mihon** (and **Tachiyomi**) [forks](/forks/) support the `.tachibk`/`.proto.gz` format to backup/restore your library.
+All **Komikku** (and **Tachiyomi**) [forks](/forks/) support the `.tachibk`/`.proto.gz` format to backup/restore your library.
 
 In addition, some forks have specific limitations regarding backup restoration:
 
 - All forks have fork-specific settings and changes that might be saved in Backups.
-  Such settings are not restored in **Mihon** and will get lost when creating a new backup.
+  Such settings are not restored in **Komikku** and will get lost when creating a new backup.
   > For Example: [TachiyomiSY](/forks/TachiyomiSY/) has the option to backup/restore saved searches.
 
-  These will **NOT** be restored to **Mihon** or its forks.
+  These will **NOT** be restored to **Komikku** or its forks.
 - Only [TachiyomiAZ](/forks/TachiyomiAZ/) supports creating/restoring both legacy `.json` backups and `.proto.gz` backups.
   > Users are recommended to update their `.json` backups to use the improved and efficient `.tachibk`/`.proto.gz` backups.
 
-Be aware of these limitations when dealing with backups in different **Mihon** and **Tachiyomi** forks.
+Be aware of these limitations when dealing with backups in different **Komikku** and **Tachiyomi** forks.

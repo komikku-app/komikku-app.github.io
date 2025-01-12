@@ -1,37 +1,35 @@
 <div align="center">
 
-<a href="https://mihon.app">
-    <img src="./.github/assets/logo.png" alt="Mihon logo" title="Mihon logo" width="80"/>
+<a href="https://komikku-app.github.io">
+    <img src="./.github/assets/logo.png" alt="Komikku logo" title="Komikku logo" width="80"/>
 </a>
 
-# Mihon [Website](#)
+# Komikku [Website](#)
 
 ### Full-featured reader
 Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.
 
-[![Discord server](https://img.shields.io/discord/1195734228319617024.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF)](https://discord.gg/mihon)
-[![GitHub downloads](https://img.shields.io/github/downloads/mihonapp/mihon/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat)](https://github.com/mihonapp/mihon/releases)
-
-[![Netlify deployment](https://api.netlify.com/api/v1/badges/95d9e2f8-42ae-4e40-8c99-82b870c51e1a/deploy-status)](https://app.netlify.com/sites/mihonapp/deploys)
+[![Discord](https://img.shields.io/discord/1242381704459452488?label=discord&labelColor=7289da&color=2c2f33&style=flat)](https://discord.gg/85jB7V5AJR)
+[![GitHub downloads](https://img.shields.io/github/downloads/komikku-app/komikku/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat)](https://github.com/komikku-app/komikku/releases)
 
 ## Contributing
 
-[Code of conduct](./CODE_OF_CONDUCT.md) · [Contributing guide](./CONTRIBUTING.md) · [Project style guide](https://mihon.app/sandbox/style-guide/)
+[Code of conduct](./CODE_OF_CONDUCT.md) · [Contributing guide](./CONTRIBUTING.md) · [Project style guide](https://komikku-app.github.io/sandbox/style-guide/)
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-If you got any questions, [join our Discord server](https://discord.gg/mihon).
+If you got any questions, [join our Discord server](https://discord.gg/85jB7V5AJR).
 
 ### Repositories
 
-[![mihonapp/mihon - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=mihonapp&repo=mihon&bg_color=161B22&text_color=c9d1d9&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=true)](https://github.com/mihonapp/mihon/)
+[![komikku-app/komikku - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=komikku-app&repo=komikku&bg_color=161B22&text_color=c9d1d9&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=true)](https://github.com/komikku-app/komikku/)
 
 ### Credits
 
 Thank you to all the people who have contributed!
 
-<a href="https://github.com/mihonapp/website/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=mihonapp/website" alt="Mihon website contributors" title="Mihon website contributors" width="600"/>
+<a href="https://github.com/komikku-app/komikku-app.github.io/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=komikku-app/komikku-app.github.io" alt="Komikku website contributors" title="Komikku website contributors" width="600"/>
 </a>
 
 ### Disclaimer

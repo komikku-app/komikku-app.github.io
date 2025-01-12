@@ -9,13 +9,13 @@ Find out how to help build the app.
 ## Code
 Know how to code and want to improve something or you generally want to support the creation of the app?
 
-[![mihonapp/mihon - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=mihonapp&repo=mihon&bg_color=f6f6f7&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=false#light "mihonapp/mihon - GitHub" =400x120)](https://github.com/mihonapp/mihon)
+[![komikku-app/komikku - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=komikku-app&repo=komikku&bg_color=f6f6f7&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=false#light "komikku-app/komikku - GitHub" =400x120)](https://github.com/komikku-app/komikku)
 
-[![mihonapp/website - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=mihonapp&repo=website&bg_color=f6f6f7&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=false#light "mihonapp/website - GitHub" =400x120)](https://github.com/mihonapp/website)
+[![komikku-app/komikku-app.github.io - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=komikku-app&repo=komikku-app.github.io&bg_color=f6f6f7&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=false#light "komikku-app/komikku-app.github.io - GitHub" =400x120)](https://github.com/komikku-app/komikku-app.github.io)
 
-[![mihonapp/mihon - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=mihonapp&repo=mihon&bg_color=1a1a41&text_color=c9d1d9&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=true#dark "mihonapp/mihon - GitHub" =400x120)](https://github.com/mihonapp/mihon)
+[![komikku-app/komikku - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=komikku-app&repo=komikku&bg_color=1a1a41&text_color=c9d1d9&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=true#dark "komikku-app/komikku - GitHub" =400x120)](https://github.com/komikku-app/komikku)
 
-[![mihonapp/website - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=mihonapp&repo=website&bg_color=1a1a41&text_color=c9d1d9&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=true#dark "mihonapp/website - GitHub" =400x120)](https://github.com/mihonapp/website)
+[![komikku-app/komikku-app.github.io - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=komikku-app&repo=komikku-app.github.io&bg_color=1a1a41&text_color=c9d1d9&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=true#dark "komikku-app/komikku-app.github.io - GitHub" =400x120)](https://github.com/komikku-app/komikku-app.github.io)
 
 ## Translation
 Find out how to help translate the app.

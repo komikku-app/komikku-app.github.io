@@ -10,8 +10,8 @@ Frequently Asked Questions about the Local source.
 ## How can I import my downloaded series?
 For a step-by-step process, we recommend referring to [this guide](/docs/guides/local-source/).
 
-## What should I do if I can't find the Mihon folder?
-In case the **Mihon** folder is not visible, create one using a file manager.
+## What should I do if I can't find the Komikku folder?
+In case the **Komikku** folder is not visible, create one using a file manager.
 
 ## How can I resolve empty/blank covers?
 Occasionally, cover images for local series might not appear.

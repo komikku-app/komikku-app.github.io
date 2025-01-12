@@ -1,6 +1,6 @@
 ---
 title: Endorsed Forks
-description: Forks are alternative versions of Mihon with exclusive features.
+description: Forks are alternative versions of Komikku with exclusive features.
 lastUpdated: false
 editLink: false
 prev: false
@@ -32,6 +32,6 @@ import { VPHomeFeatures } from "vitepress/theme"
 
 # Endorsed Forks
 
-Forks are alternative versions of Mihon with exclusive features.
+Forks are alternative versions of Komikku with exclusive features.
 
 <VPHomeFeatures />

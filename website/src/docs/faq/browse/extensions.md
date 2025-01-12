@@ -8,10 +8,10 @@ description: Frequently Asked Questions about Extensions.
 Frequently Asked Questions about Extensions.
 
 ## What are some recommended extensions and sources?
-Mihon is bring-your-own-content and does not offer anything.
+Komikku is bring-your-own-content and does not offer anything.
 
 ::: info Disclaimer
-**Mihon** isn't responsible for slow, down, missing chapters, or subpar image quality of sources as it doesn't host the content.
+**Komikku** isn't responsible for slow, down, missing chapters, or subpar image quality of sources as it doesn't host the content.
 :::
 
 ## Enabling third-party installations
@@ -39,8 +39,8 @@ When prompted while installing your first extension, allow unknown apps installa
 ::::
 
 ## How do I uninstall an extension?
-Uninstall extensions like regular apps: through device settings or in **Mihon**.
+Uninstall extensions like regular apps: through device settings or in **Komikku**.
 
 ::: tip Uninstalling an extension
-In **Mihon**, uninstall an extension via <nav to="extensions">, then tap **Uninstall** on the chosen extension.
+In **Komikku**, uninstall an extension via <nav to="extensions">, then tap **Uninstall** on the chosen extension.
 :::

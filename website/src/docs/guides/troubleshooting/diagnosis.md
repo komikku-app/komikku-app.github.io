@@ -27,12 +27,12 @@ Follow these steps to troubleshoot and find solutions.
    - Clear Database
    - DNS over HTTPS
 1. **Download Issues**: Delete the queue and retry downloads.
-1. **Restart Mihon**: Force close and reopen the app.
+1. **Restart Komikku**: Force close and reopen the app.
 
 If any of these solutions help, go to [Personalized Issue](#personalized-issue).
 If it is not just you, go to [Widespread Issue](#widespread-issue).
 
-If none of these solutions help, try asking in our [Discord server](https://discord.gg/mihon).
+If none of these solutions help, try asking in our [Discord server](https://discord.gg/85jB7V5AJR).
 
 State your app version and the source, series, and chapter with the problem if it is not listed.
 
@@ -42,7 +42,7 @@ There are no ETAs for updates.
 :::
 
 ## Personalized issue
-If you're the only one facing a problem, you might be encountering [Cloudflare](/docs/guides/troubleshooting/#cloudflare) protection, an IP ban, or other countermeasures set by website owners against programs like **Mihon**.
+If you're the only one facing a problem, you might be encountering [Cloudflare](/docs/guides/troubleshooting/#cloudflare) protection, an IP ban, or other countermeasures set by website owners against programs like **Komikku**.
 
 **To minimize future issues:**
 - Avoid using downloads with the source.
@@ -55,8 +55,8 @@ These are general guidelines as each site has its specific undisclosed limits an
 ## Widespread issue
 When everyone experiences a problem, it could be with the extension or app:
 
-1. Check [open issues](https://github.com/mihonapp/mihon/issues).
-2. Check [closed issues](https://github.com/mihonapp/mihon/issues?q=is%3Aissue+is%3Aclosed) in case it's resolved but not yet released.
+1. Check [open issues](https://github.com/komikku-app/komikku/issues).
+2. Check [closed issues](https://github.com/komikku-app/komikku/issues?q=is%3Aissue+is%3Aclosed) in case it's resolved but not yet released.
 3. If not found, create a new issue.
 
 ::: warning

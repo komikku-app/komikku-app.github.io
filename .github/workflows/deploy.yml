@@ -8,7 +8,7 @@ on:
 
 env:
     VITE_BASE: /
-    VITE_HOSTNAME: https://mihon.app
+    VITE_HOSTNAME: https://komikku-app.github.io
 
 jobs:
     deploy:

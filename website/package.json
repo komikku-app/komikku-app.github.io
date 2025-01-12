@@ -1,17 +1,17 @@
 {
-  "name": "mihon-website",
+  "name": "komikku-website",
   "type": "module",
   "version": "3.0.0",
   "private": true,
   "packageManager": "pnpm@9.14.2",
-  "description": "Official website for the Mihon app.",
+  "description": "Official website for the Komikku app.",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mihonapp/website.git"
+    "url": "git+https://github.com/komikku-app/komikku-app.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/mihonapp/website/issues"
+    "url": "https://github.com/komikku-app/komikku-app.github.io/issues"
   },
   "engines": {
     "node": ">=20",

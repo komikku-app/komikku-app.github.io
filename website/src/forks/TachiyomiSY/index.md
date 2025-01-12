@@ -1,7 +1,7 @@
 ---
 title: TachiyomiSY
 titleTemplate: false
-description: Keeping up-to-date with Mihon while also adding exclusive features
+description: Keeping up-to-date with Komikku while also adding exclusive features
 
 layout: home
 pageClass: page-tachiyomi-sy
@@ -9,7 +9,7 @@ pageClass: page-tachiyomi-sy
 hero:
   name: TachiyomiSY
   text: Hentai-focused
-  tagline: Keeping up-to-date with Mihon while also adding exclusive features
+  tagline: Keeping up-to-date with Komikku while also adding exclusive features
   image: /forks/logo-sy.webp
   actions:
     - theme: brand

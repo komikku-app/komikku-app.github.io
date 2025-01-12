@@ -1,4 +1,4 @@
-# Mihon Website Contributing Guide
+# Komikku Website Contributing Guide
 
 Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
 
@@ -78,4 +78,4 @@ It is also recommended you lint your files before the PR.
 
 Thank you to all the people who have already contributed!
 
-[![List of Contributors](https://contrib.rocks/image?repo=mihonapp/website 'List of Contributors')](https://github.com/mihonapp/website/graphs/contributors)
+[![List of Contributors](https://contrib.rocks/image?repo=komikku-app/komikku-app.github.io 'List of Contributors')](https://github.com/komikku-app/komikku-app.github.io/graphs/contributors)
