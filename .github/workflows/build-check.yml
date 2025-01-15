@@ -1,0 +1,68 @@
+name: PR build check
+
+on:
+    workflow_dispatch: {}
+    pull_request:
+      paths:
+        - '**'
+        - '!*.md'
+
+env:
+    VITE_BASE: /
+    VITE_HOSTNAME: https://komikku-app.github.io
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        defaults:
+          run:
+            working-directory: "website"
+
+        permissions:
+            contents: read
+            pages: write
+            id-token: write
+
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Install Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                version: 8
+                run_install: false
+                package_json_file: "website/package-lock.json"
+
+            - name: Get pnpm store directory
+              shell: bash
+              run: |
+                echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+            - uses: actions/cache@v4
+              name: Setup pnpm cache
+              with:
+                path: ${{ env.STORE_PATH }}
+                key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+                restore-keys: |
+                  ${{ runner.os }}-pnpm-store-
+
+            - name: Install dependencies
+              run: pnpm install
+
+            - name: Build
+              run: pnpm build
+
+            - name: Configure pages
+              uses: actions/configure-pages@v5
