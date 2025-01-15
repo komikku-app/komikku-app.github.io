@@ -14,6 +14,7 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 // Import icon components
 import { IconBugReport, IconDownload, IconNewspaperVariant } from '@iconify-prerendered/vue-mdi'
 
+import goatcounter from './plugin/goatcounter';
 import analytics from './plugin/analytics'
 import Layout from './Layout.vue'
 
@@ -25,7 +26,8 @@ export default {
     app.component('IconDownload', IconDownload)
     app.component('IconNewspaperVariant', IconNewspaperVariant)
     app.component('IconBugReport', IconBugReport)
-    analytics({ id: 'G-KN9GHR5EKT' })
+    analytics({ id: 'G-RC88JTMM4C' })
+    goatcounter({ id: "cuong-tran" });
   },
   Layout,
 }
