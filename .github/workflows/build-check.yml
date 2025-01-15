@@ -1,18 +1,14 @@
-name: Deploy
+name: PR build check
 
 on:
     workflow_dispatch: {}
-    push:
-        branches:
-            - main
-        paths:
-          - '**'
-          - '!*.md'
-          - '!.github/**'
-          - '.github/workflows/deploy.yml'
+    pull_request:
+      paths:
+        - '**'
+        - '!*.md'
 
 concurrency:
-  group: ${{ github.workflow }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 env:
@@ -20,20 +16,11 @@ env:
     VITE_HOSTNAME: https://komikku-app.github.io
 
 jobs:
-    deploy:
+    build:
         runs-on: ubuntu-latest
         defaults:
           run:
             working-directory: "website"
-
-        permissions:
-            contents: read
-            pages: write
-            id-token: write
-
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
 
         steps:
             - name: Checkout
@@ -71,15 +58,3 @@ jobs:
 
             - name: Build
               run: pnpm build
-
-            - name: Configure pages
-              uses: actions/configure-pages@v5
-
-            - name: Upload pages artifact
-              uses: actions/upload-pages-artifact@v3
-              with:
-                  path: website/dist
-
-            - name: Deploy
-              id: deployment
-              uses: actions/deploy-pages@v4
