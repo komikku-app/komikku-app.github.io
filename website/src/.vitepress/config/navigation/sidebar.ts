@@ -23,6 +23,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/changelogs/',
         },
         {
+          text: 'Extensions',
+          link: 'https://komikku-repo.github.io',
+        },
+        {
           text: 'Forks',
           link: '/forks/',
         },
