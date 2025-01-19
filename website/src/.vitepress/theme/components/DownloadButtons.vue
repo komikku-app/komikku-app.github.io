@@ -8,12 +8,12 @@ const downloadInformation = computed(() => ({
   beta: {
     tagName: release.beta.tag_name ?? 'r0000',
     asset: (release.beta.assets ?? [])
-      .find(a => /^komikku-r\d{4,}.apk/.test(a.name)),
+      .find(a => /^Komikku-r\d{4,}.apk/.test(a.name)),
   },
   stable: {
     tagName: release.stable.tag_name ?? 'v0.00.0',
     asset: (release.stable.assets ?? [])
-      .find(a => /^komikku-v\d+\.\d+\.\d+.apk/.test(a.name)),
+      .find(a => /^Komikku-v\d+\.\d+\.\d+.apk/.test(a.name)),
   },
 }))
 

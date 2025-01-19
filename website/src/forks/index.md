@@ -32,6 +32,7 @@ import { VPHomeFeatures } from "vitepress/theme"
 
 # Endorsed Forks
 
-Forks are alternative versions of Komikku with exclusive features.
+<!-- Forks are alternative versions of Komikku with exclusive features. -->
+Komikku is a fork original from TachiyomiSY and continuously migrating update from both Mihon & other forks.
 
-<VPHomeFeatures />
+<!-- <VPHomeFeatures /> -->
