@@ -27,7 +27,8 @@ Find out how to help translate the app.
 Want to help translate the app to your language?
 You can easily help by utilizing a service we use called **Weblate**.
 
-> View translation project [here](https://hosted.weblate.org/engage/mihon/).
+> View translation project [Mihon](https://hosted.weblate.org/engage/mihon/).
+> or Komikku related [here](https://crowdin.com/project/komikku/).
 
 ### Helpful links
 * [Translators guide](https://docs.weblate.org/en/latest/user/translating.html)
