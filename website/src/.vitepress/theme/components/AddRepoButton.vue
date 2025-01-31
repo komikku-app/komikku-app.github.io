@@ -45,7 +45,7 @@ onMounted(() => {
       <div class="action-buttons">
         <a
           class="action-button primary"
-          href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/komikku-repo/extensions/repo/index.min.json"
+          href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/komikku-app/tracker-extensions/repo/index.min.json"
           @click="handleAnalytics()"
         >
           <IconDownload />
