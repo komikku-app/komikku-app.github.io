@@ -20,15 +20,14 @@ Know how to code and want to improve something or you generally want to support 
 ## Translation
 Find out how to help translate the app.
 
-[![Translation stats](https://hosted.weblate.org/widget/mihon/287x66-grey.png "Translation stats - Weblate" =287x66)](https://hosted.weblate.org/engage/mihon/)
+[![Translation stats](https://hosted.weblate.org/widget/komikku-app/287x66-grey.png "Translation stats - Weblate" =287x66)](https://hosted.weblate.org/engage/komikku-app/)
 
-[![Translation progress](https://hosted.weblate.org/widget/mihon/horizontal-auto.svg "Translation progress - Weblate" =760x200)](https://hosted.weblate.org/engage/mihon/)
+[![Translation progress](https://hosted.weblate.org/widget/komikku-app/horizontal-auto.svg "Translation progress - Weblate" =760x200)](https://hosted.weblate.org/engage/komikku-app/)
 
 Want to help translate the app to your language?
 You can easily help by utilizing a service we use called **Weblate**.
 
-> View translation project [Mihon](https://hosted.weblate.org/engage/mihon/).
-> or Komikku related [here](https://crowdin.com/project/komikku/).
+> View translation project [Komikku](https://hosted.weblate.org/engage/komikku-app/), or [here](https://crowdin.com/project/komikku/).
 
 ### Helpful links
 * [Translators guide](https://docs.weblate.org/en/latest/user/translating.html)
