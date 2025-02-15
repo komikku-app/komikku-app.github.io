@@ -2,13 +2,13 @@
 
 Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
 
-- [Code of Conduct](../CODE_OF_CONDUCT.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [Development Setup](#development-setup)
 - [Project Structure](#project-structure)
 
 ## Development Setup
 
-You will need [Node.js](http://nodejs.org) **version 20+**, and [pnpm](https://pnpm.io/installation) **version 8+**.
+You will need [Node.js](http://nodejs.org) **version 22+**, and [pnpm](https://pnpm.io/installation) **version 10+**.
 
 After cloning the repo and entering the the directory, go to the `/website` folder and run:
 

@@ -3,7 +3,7 @@
   "type": "module",
   "version": "3.0.0",
   "private": true,
-  "packageManager": "pnpm@9.14.2",
+  "packageManager": "pnpm@10.2.1",
   "description": "Official website for the Komikku app.",
   "license": "MPL-2.0",
   "repository": {
@@ -14,8 +14,8 @@
     "url": "https://github.com/komikku-app/komikku-app.github.io/issues"
   },
   "engines": {
-    "node": ">=20",
-    "pnpm": ">=8"
+    "node": ">=22",
+    "pnpm": ">=10"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -36,7 +36,7 @@
     "@octokit/rest": "21.0.2",
     "@octokit/types": "13.6.1",
     "@tanstack/vue-query": "5.61.3",
-    "@vueuse/core": "11.3.0",
+    "@vueuse/core": "12.5.0",
     "axios": "1.7.7",
     "element-plus": "2.8.8",
     "lodash.groupby": "4.6.0",
