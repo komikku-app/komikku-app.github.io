@@ -12,6 +12,8 @@ on:
           - '!*.md'
           - '!.github/**'
           - '.github/workflows/deploy.yml'
+    repository_dispatch:
+        types: [app_release]
 
 concurrency:
   group: ${{ github.workflow }}
