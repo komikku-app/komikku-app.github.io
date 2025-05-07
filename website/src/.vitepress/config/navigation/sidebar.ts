@@ -26,10 +26,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           text: 'Extensions',
           link: 'https://komikku-app.github.io/tracker-extensions/',
         },
-        {
-          text: 'Forks',
-          link: '/forks/',
-        },
+        // {
+        //   text: 'Forks',
+        //   link: '/forks/',
+        // },
         {
           text: 'Contribute',
           link: '/docs/contribute',
