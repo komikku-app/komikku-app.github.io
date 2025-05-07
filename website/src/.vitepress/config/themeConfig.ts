@@ -52,7 +52,7 @@ const themeConfig: DefaultTheme.Config = {
     options: {
       appId: 'Q86TZCK22S',
       apiKey: '374776fdc4ecd4e72c1ea3a91b71e213',
-      indexName: 'komikku',
+      indexName: 'komikku_app_github_io_q86tzck22s_pages',
     },
   },
 }
