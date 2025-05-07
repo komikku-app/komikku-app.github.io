@@ -6,6 +6,7 @@ const headConfig: HeadConfig[] = [
   ['meta', { name: 'msapplication-TileColor', content: '#0058A0' }],
   ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
   ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
+  ['meta', { name: 'algolia-site-verification', content: '037010E1F9C05EF7' }],
   ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
   ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
