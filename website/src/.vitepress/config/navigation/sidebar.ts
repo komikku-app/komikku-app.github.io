@@ -22,10 +22,6 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           text: 'Changelogs',
           link: '/changelogs/',
         },
-        {
-          text: 'Extensions',
-          link: 'https://komikku-app.github.io/tracker-extensions/',
-        },
         // {
         //   text: 'Forks',
         //   link: '/forks/',

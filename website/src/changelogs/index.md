@@ -13,6 +13,7 @@ import ChangelogsList from "@theme/components/ChangelogsList.vue";
 
 # Changelogs
 
-Changelogs of all Komikku stable releases, which are also available [on GitHub](https://github.com/komikku-app/komikku/releases). Beta releases can be seen [on GitHub](https://github.com/komikku-app/komikku-preview/releases).
+Changelogs of all Komikku stable releases, which are also available [on GitHub](https://github.com/komikku-app/komikku/releases).<br>
+Beta releases can be seen [on GitHub](https://github.com/komikku-app/komikku-preview/releases).
 
 <ChangelogsList />

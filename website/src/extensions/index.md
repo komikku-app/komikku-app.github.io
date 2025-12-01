@@ -1,6 +1,6 @@
 ---
 title: Extensions
-description: Extension list for Mihon.
+description: Extension list for Komikku.
 lastUpdated: false
 editLink: false
 prev: false
@@ -16,4 +16,4 @@ head:
 
 # Extensions
 
-You should be redirected to the extensions listing automatically. If it doesn't work, click [here](https://youtu.be/dQw4w9WgXcQ/).
+You should be redirected to the extensions listing automatically. If it doesn't work, click [here on extensions](https://youtu.be/dQw4w9WgXcQ/).

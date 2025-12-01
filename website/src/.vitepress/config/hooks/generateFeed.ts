@@ -1,7 +1,9 @@
-import path from 'node:path'
+import type { Item } from 'feed'
+import type { SiteConfig } from 'vitepress'
 import { writeFileSync } from 'node:fs'
-import { Feed, type Item } from 'feed'
-import { type SiteConfig, createContentLoader } from 'vitepress'
+import path from 'node:path'
+import { Feed } from 'feed'
+import { createContentLoader } from 'vitepress'
 
 async function generateFeed(config: SiteConfig, hostname: string) {
   const feed = new Feed({
@@ -12,7 +14,7 @@ async function generateFeed(config: SiteConfig, hostname: string) {
     language: 'en',
     image: `${hostname}/img/logo.png`,
     favicon: `${hostname}/favicon.ico`,
-    copyright: `Copyright © ${new Date().getFullYear()} Mihon`,
+    copyright: `Copyright © ${new Date().getFullYear()} Mihon App`,
   })
   const json: Item[] = []
 

@@ -1,22 +1,22 @@
-// https://vitepress.dev/guide/custom-theme
-import DefaultTheme from 'vitepress/theme'
-
-// Import Stylus files
-import './styles/base.styl'
-
-// Import Global plugins
-import 'element-plus/theme-chalk/dark/css-vars.css'
+// Import icon components
+import { IconBugReport, IconDownload, IconNewspaperVariant } from '@iconify-prerendered/vue-mdi'
 
 import { VueQueryPlugin } from '@tanstack/vue-query'
 
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
-// Import icon components
-import { IconBugReport, IconDownload, IconNewspaperVariant } from '@iconify-prerendered/vue-mdi'
+// https://vitepress.dev/guide/custom-theme
+import DefaultTheme from 'vitepress/theme'
 
-import goatcounter from './plugin/goatcounter';
-import analytics from './plugin/analytics'
 import Layout from './Layout.vue'
+
+import analytics from './plugin/analytics'
+import goatcounter from './plugin/goatcounter'
+
+// Import Stylus files
+import './styles/base.styl'
+// Import Global plugins
+import 'element-plus/theme-chalk/dark/css-vars.css'
 
 export default {
   extends: DefaultTheme,
@@ -27,7 +27,7 @@ export default {
     app.component('IconNewspaperVariant', IconNewspaperVariant)
     app.component('IconBugReport', IconBugReport)
     analytics({ id: 'G-RC88JTMM4C' })
-    goatcounter({ id: "cuong-tran" });
+    goatcounter({ id: "cuong-tran" })
   },
   Layout,
 }

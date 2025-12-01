@@ -1,25 +1,29 @@
 import process from 'node:process'
-import { URL, fileURLToPath } from 'node:url'
-import { defineConfig, loadEnv } from 'vitepress'
+import { fileURLToPath, URL } from 'node:url'
+import { Octokit } from '@octokit/rest'
 import ElementPlus from 'unplugin-element-plus/vite'
+import { defineConfig, loadEnv } from 'vitepress'
+
+// Theme related config
+import headConfig from './config/headConfig'
+
+// Enhanced meta generation
+import generateFeed from './config/hooks/generateFeed'
+
+import generateMeta from './config/hooks/generateMeta'
+
+// Provides how to generate Meta head tags
+
+// Allows generation of RSS feed
+import generateOgImages from './config/hooks/generateOgImages'
 
 import markdownConfig from './config/markdownConfig'
 
 // For use with loading Markdown plugins
 import themeConfig from './config/themeConfig'
 
-// Theme related config
-import headConfig from './config/headConfig'
-
-// Provides how to generate Meta head tags
-
-import generateMeta from './config/hooks/generateMeta'
-
-// Enhanced meta generation
-import generateFeed from './config/hooks/generateFeed'
-
-// Allows generation of RSS feed
-import generateOgImages from './config/hooks/generateOgImages'
+const octokit = new Octokit()
+const releaseDateCache = new Map<string, string>()
 
 const title = 'Komikku'
 const description = 'Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.'
@@ -39,6 +43,41 @@ export default defineConfig({
   head: headConfig,
   markdown: markdownConfig,
   themeConfig,
+  transformPageData: async (pageData) => {
+    if (pageData.filePath === 'changelogs/[tag].md') {
+      const tag = (pageData as any).params?.tag as string | undefined
+      if (tag) {
+        const version = tag.startsWith('v') ? tag.slice(1) : tag
+        pageData.frontmatter ||= {}
+        pageData.frontmatter.title = `v${version}`
+
+        let publishedAt = releaseDateCache.get(tag)
+        if (!publishedAt) {
+          try {
+            const { data } = await octokit.repos.getReleaseByTag({ owner: 'komikku-app', repo: 'komikku', tag })
+            publishedAt = data.published_at || data.created_at || ''
+            if (publishedAt)
+              releaseDateCache.set(tag, publishedAt)
+          }
+          catch {}
+        }
+
+        const prettyDate = publishedAt
+          ? new Date(publishedAt).toLocaleDateString('en', { month: 'short', day: 'numeric', year: 'numeric' })
+          : undefined
+
+        const versionLabel = tag
+        const desc = prettyDate
+          ? `Changelog for Komikku ${versionLabel}, released on ${prettyDate}`
+          : `Changelog for Komikku ${versionLabel}`
+
+        pageData.frontmatter.description = pageData.frontmatter.description || desc
+        pageData.title = pageData.frontmatter.title
+        pageData.description = pageData.frontmatter.description
+      }
+    }
+    return pageData
+  },
   transformHead: async context => generateMeta(context, hostname),
   buildEnd: async (context) => {
     generateFeed(context, hostname)

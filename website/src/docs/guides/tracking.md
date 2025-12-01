@@ -5,7 +5,7 @@ description: Tracking helps track your library with different online services.
 ---
 
 # Tracking
-**Mihon** supports various tracking services to help you automatically update your tracking details such as read chapters, scoring, start & finish dates, etc.
+**Komikku** supports various tracking services to help you automatically update your tracking details such as read chapters, scoring, start & finish dates, etc.
 
 Link supported tracking services in <nav to="tracking">.
 
@@ -26,7 +26,7 @@ Link supported tracking services in <nav to="tracking">.
 
 ## Enhanced services
 
-**Mihon** also supports various self-hosted services with exclusive features between the service & the self-hosted series.
+**Komikku** also supports various self-hosted services with exclusive features between the service & the self-hosted series.
 
 ::::tabs
 ==Komga

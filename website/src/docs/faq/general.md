@@ -37,4 +37,4 @@ Projects using the **Komikku** name for anime streaming aren't affiliated with t
 
 ## What's a fork?
 Forks are alternate **Komikku** versions with distinct features.
-Get more details [here](/forks/).
+Get more details [here on forks](/forks/).

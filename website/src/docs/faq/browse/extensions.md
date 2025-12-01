@@ -7,8 +7,8 @@ description: Frequently Asked Questions about Extensions.
 # Extensions
 Frequently Asked Questions about Extensions.
 
-## Where can I find repositories/extensions for Mihon?
-Mihon does not have, associate, or provide any repositories or extensions.
+## Where can I find repositories/extensions for Komikku?
+Komikku does not have, associate, or provide any repositories or extensions.
 
 ::: danger Caution
 Beware that any third-party repositories or extensions will have full access to the app and may contain malware.
