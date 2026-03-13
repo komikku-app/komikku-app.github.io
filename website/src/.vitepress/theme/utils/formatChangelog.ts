@@ -40,6 +40,7 @@ export function formatChangelog(md: MarkdownIt, body: string | null | undefined,
     .replace(/([\w-]+)\/([\w-]+)#(\d+)/g, '[$1/$2#$3](https://github.com/$1/$2/issues/$3)')
     .replace(/#(\d+)/g, '[#$1](https://github.com/komikku-app/komikku/issues/$1)')
     .replace(/\b([0-9a-f]{7,10})\b/gi, '[$1](https://github.com/komikku-app/komikku/commit/$1)')
+    .replace(/--- Checksums ---/g, '')
     .replace(/<!-->/g, '')
     .replace('https://github.com/komikku-app/komikku/releases', '/changelogs/')
     .replace(/https:\/\/github.com\/komikku-app\/komikku\/releases\/tag\/(.*)/g, '#$1')
