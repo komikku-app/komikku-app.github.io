@@ -11,12 +11,13 @@ defineProps<{ title: string, description?: string, dir?: string }>()
       <div tw="w-full flex justify-between items-center text-4xl font-medium">
         <div tw="flex items-center">
           <svg version="1.1" id="Layer_1" x="0px" y="0px" width="148" viewBox="0 0 148 148"
-            enable-background="new 0 0 1024 1024" xml:space="preserve" sodipodi:docname="safari-pinned-tab.svg"
-            inkscape:version="1.3.2 (091e20e, 2023-11-25)" inkscape:export-filename="adobe_express_red.png"
-            inkscape:export-xdpi="96" inkscape:export-ydpi="96" height="148"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg">
+               enable-background="new 0 0 1024 1024" xml:space="preserve" sodipodi:docname="safari-pinned-tab.svg"
+               inkscape:version="1.3.2 (091e20e, 2023-11-25)" inkscape:export-filename="adobe_express_red.png"
+               inkscape:export-xdpi="96" inkscape:export-ydpi="96" height="148"
+               xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+               xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
+               xmlns:svg="http://www.w3.org/2000/svg"
+            >
             <defs id="defs3" />
             <sodipodi:namedview id="namedview3" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
               inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
