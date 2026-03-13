@@ -1,15 +1,17 @@
 // SPDX-License-Identifier: Apache-2.0
 
+import process from 'node:process'
+
 function mountGoatcounter(id: string) {
   if (window.goatcounter || window.location.hostname === 'localhost') {
     return
   }
 
-  const script = document.createElement("script")
+  const script = document.createElement('script')
 
   script.dataset.goatcounter = `https://${id}.goatcounter.com/count`
   script.async = true
-  script.src = "//gc.zgo.at/count.js"
+  script.src = '//gc.zgo.at/count.js'
 
   document.head.appendChild(script)
 }

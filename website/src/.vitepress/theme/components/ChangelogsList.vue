@@ -10,8 +10,7 @@ function renderMarkdown(string: string | null | undefined) {
   const pre = (string ?? '').replace(
     'Check out the [past release notes](https://github.com/komikku-app/komikku/releases) if you’re upgrading from an earlier version. ',
     '',
-  )
-    .replace(/^Check out the .*past release notes.* if you're.*$/m, '')
+  ).replace(/^Check out the .*past release notes.* if you're.*$/m, '')
   return formatChangelog(md, pre, { stripChecksums: true })
 }
 

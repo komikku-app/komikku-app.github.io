@@ -27,7 +27,7 @@ export default {
     app.component('IconNewspaperVariant', IconNewspaperVariant)
     app.component('IconBugReport', IconBugReport)
     analytics({ id: 'G-RC88JTMM4C' })
-    goatcounter({ id: "cuong-tran" })
+    goatcounter({ id: 'cuong-tran' })
   },
   Layout,
 }
