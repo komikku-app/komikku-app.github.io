@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
 
-import process from 'node:process'
-
 function mountGoatcounter(id: string) {
   if (window.goatcounter || window.location.hostname === 'localhost') {
     return
@@ -17,7 +15,7 @@ function mountGoatcounter(id: string) {
 }
 
 export default function ({ id }: { id: string }) {
-  if (process.env.NODE_ENV === 'production' && id && typeof window !== 'undefined') {
+  // eslint-disable-next-line node/prefer-global/process
+  if (process.env.NODE_ENV === 'production' && id && typeof window !== 'undefined')
     mountGoatcounter(id)
-  }
 }
