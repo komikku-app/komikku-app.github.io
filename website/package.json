@@ -37,10 +37,10 @@
     "@octokit/types": "16.0.0",
     "@tanstack/vue-query": "5.90.7",
     "@vueuse/core": "14.0.0",
-    "axios": "1.13.2",
+    "axios": "1.15.0",
     "element-plus": "2.11.7",
     "lodash.groupby": "4.6.0",
-    "markdown-it": "14.1.0",
+    "markdown-it": "14.1.1",
     "markdown-it-shortcode-tag": "1.1.0",
     "moment": "2.30.1"
   },
