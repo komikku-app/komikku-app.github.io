@@ -3,22 +3,22 @@ title: Download
 description: Download page that allows users to access and install the latest version of the app.
 lastUpdated: false
 editLink: false
+aside: false
 prev: false
 next: false
 ---
 
 <script setup>
 import DownloadButtons from "@theme/components/DownloadButtons.vue";
-import ReleaseDate from "@theme/components/ReleaseDate.vue";
 import Changelog from "@theme/components/Changelog.vue";
 </script>
 
 # Download
 
-The latest stable version of **Komikku** was released **<ReleaseDate type="stable" />** and the latest beta version was released **<ReleaseDate type="beta" />**.
+<DownloadButtons group="primary" />
 
-Beta releases are intended for testing upcoming changes and may not be a stable experience.
+<Changelog type="stable" hide-asset-selection-tip />
 
-<DownloadButtons />
+## Other downloads
 
-<Changelog type="stable" />
+<DownloadButtons group="other" />

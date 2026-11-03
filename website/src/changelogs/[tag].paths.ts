@@ -1,13 +1,8 @@
-import { Octokit } from '@octokit/rest'
+import { getStableReleases } from '../.vitepress/config/releaseData'
 
 export default {
   async paths() {
-    const octokit = new Octokit()
-    const releases = await octokit.paginate(octokit.repos.listReleases, {
-      owner: 'komikku-app',
-      repo: 'komikku',
-      per_page: 100,
-    })
+    const releases = await getStableReleases()
 
     return releases
       .filter(r => !!r.tag_name)
