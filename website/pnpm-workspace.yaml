@@ -1,8 +1,7 @@
-allowBuilds:
-  esbuild: true
-  vue-demi: true
-
 minimumReleaseAge: 0
+minimumReleaseAgeExcludePrune: true
+trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 43200
 
 publicHoistPattern:
   - '*eslint-plugin-*'
@@ -10,5 +9,7 @@ publicHoistPattern:
   - '@antfu/*'
 
 shellEmulator: true
-trustPolicy: no-downgrade
-trustPolicyIgnoreAfter: 43200
+
+allowBuilds:
+  esbuild: true
+  vue-demi: true
