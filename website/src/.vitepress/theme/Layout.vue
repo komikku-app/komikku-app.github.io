@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { provide, watch } from 'vue'
+import { computed, provide, watch } from 'vue'
+import LatestStableRelease from './components/LatestStableRelease.vue'
 
+const { frontmatter, isDark } = useData()
 const route = useRoute()
+const isHomePage = computed(() => frontmatter.value.layout === 'home' && route.path === '/')
 
 watch(() => route.path, (path, referrer) => {
   window.goatcounter?.count?.({ path, referrer })
 })
-
-const { isDark } = useData()
 
 provide('toggle-appearance', () => {
   isDark.value = !isDark.value
@@ -17,5 +18,9 @@ provide('toggle-appearance', () => {
 </script>
 
 <template>
-  <DefaultTheme.Layout />
+  <DefaultTheme.Layout>
+    <template v-if="isHomePage" #home-hero-actions-after>
+      <LatestStableRelease />
+    </template>
+  </DefaultTheme.Layout>
 </template>

@@ -6,19 +6,26 @@ import { data as release } from '../data/release.data'
 import { formatChangelog } from '../utils/formatChangelog'
 import Contributors from './Contributors.vue'
 
-const props = defineProps<{ type: keyof AppRelease }>()
+const props = withDefaults(defineProps<{
+  hideAssetSelectionTip?: boolean
+  type: keyof AppRelease
+}>(), {
+  hideAssetSelectionTip: false,
+})
 const { type } = toRefs(props)
 
 const md = new MarkdownIt({ html: true })
 
-const changelog = computed(() => formatChangelog(md, release[type.value].body))
+const changelog = computed(() => formatChangelog(md, release[type.value].body, {
+  hideAssetSelectionTip: props.hideAssetSelectionTip,
+}))
 </script>
 
 <template>
   <div class="changelog">
     <header>
       <IconNewspaperVariant />
-      <h2>Changelog</h2>
+      <h2>Changelog <span className="version-name">{{ release[type].tag_name }}</span></h2>
     </header>
     <div v-html="changelog" />
     <Contributors
@@ -50,7 +57,6 @@ const changelog = computed(() => formatChangelog(md, release[type.value].body))
 
   header {
     display: flex
-    justify-content: center
     align-items: baseline
     margin: 0 0 1rem
   }
@@ -67,6 +73,12 @@ const changelog = computed(() => formatChangelog(md, release[type.value].body))
     padding: 0
     color: var(--vp-c-text-1)
     border: none
+
+    .version-name {
+      font-size: 1rem
+      color: var(--vp-c-text-2)
+      margin-left: 0.5rem
+    }
   }
 
   div > p {

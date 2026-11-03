@@ -22,7 +22,7 @@ If you got any questions, [join our Discord server](https://discord.gg/85jB7V5AJ
 
 ### Repositories
 
-[![komikku-app/komikku - GitHub](https://github-readme-stats.vercel.app/api/pin/?username=komikku-app&repo=komikku&bg_color=161B22&text_color=c9d1d9&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=true)](https://github.com/komikku-app/komikku/)
+[![komikku-app/komikku - GitHub](https://github-stats-extended.vercel.app/api/pin/?username=komikku-app&repo=komikku&bg_color=161B22&text_color=c9d1d9&title_color=0877d2&icon_color=0877d2&border_radius=8&hide_border=true&description_lines_count=2)](https://github.com/komikku-app/komikku/)
 
 ### Credits
 

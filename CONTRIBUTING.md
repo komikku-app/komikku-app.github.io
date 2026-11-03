@@ -8,7 +8,7 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ## Development Setup
 
-You will need [Node.js](http://nodejs.org) **version 22+**, and [pnpm](https://pnpm.io/installation) **version 10+**.
+You will need [Node.js](http://nodejs.org) **version 24+**, and [pnpm](https://pnpm.io/installation) **version 11+**.
 
 After cloning the repo and entering the the directory, go to the `/website` folder and run:
 
@@ -29,7 +29,19 @@ $ pnpm dev
 ``` bash
 # This command will generate a static site inside a dist directory in your project.
 $ pnpm build
+```
 
+### GitHub release cache
+
+The build caches GitHub release data locally, so repeated builds do not consume API requests. Refresh it before testing release-related changes:
+
+``` powershell
+# Set GITHUB_TOKEN first to avoid GitHub's unauthenticated API rate limit.
+$env:GITHUB_TOKEN = gh auth token
+pnpm refresh:releases
+```
+
+``` bash
 # Run this command to preview the built files in a local server.
 $ pnpm preview
 ```
