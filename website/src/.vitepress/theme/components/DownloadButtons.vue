@@ -109,16 +109,11 @@ onMounted(() => {
   isAndroid.value = !!navigator.userAgent.match(/android/i)
 })
 
-function handleAnalytics(type: ReleaseId) {
-  const label = type[0].toUpperCase() + type.slice(1)
-  const version = type === 'stable' || type === 'foss'
-    ? release.stable.tag_name
-    : release.beta.tag_name
-
+function handleAnalytics(card: DownloadCard) {
   window.gtag?.('event', 'Download', {
     event_category: 'App',
-    event_label: label,
-    version,
+    event_label: card.title,
+    version: card.tagName,
   })
 }
 </script>
@@ -176,7 +171,7 @@ function handleAnalytics(type: ReleaseId) {
               :class="card.buttonTone"
               :download="card.asset?.name"
               :href="card.asset?.browser_download_url"
-              @click="handleAnalytics(card.id)"
+              @click="handleAnalytics(card)"
             >
               <IconDownload />
               <span class="text">Komikku {{ card.title }}</span>

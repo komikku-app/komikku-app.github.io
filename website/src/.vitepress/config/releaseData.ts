@@ -95,7 +95,7 @@ async function readCache(): Promise<ReleaseData | undefined> {
 
 async function writeCache(data: ReleaseData): Promise<void> {
   await mkdir(dirname(cacheFile), { recursive: true })
-  const temporaryFile = `${cacheFile}.tmp`
+  const temporaryFile = `${cacheFile}.${process.pid}.${Date.now()}.tmp`
   const cached: CachedReleaseData = {
     version: 1,
     fetchedAt: new Date().toISOString(),
