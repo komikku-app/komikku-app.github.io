@@ -10,6 +10,7 @@ import DefaultTheme from 'vitepress/theme'
 
 import Layout from './Layout.vue'
 
+import algoliaLogoLink from './plugin/algoliaLogoLink'
 import analytics from './plugin/analytics'
 import goatcounter from './plugin/goatcounter'
 
@@ -28,6 +29,7 @@ export default {
     app.component('IconBugReport', IconBugReport)
     analytics({ id: 'G-RC88JTMM4C' })
     goatcounter({ id: 'cuong-tran' })
+    algoliaLogoLink({ href: 'https://www.algolia.com/?utm_medium=AOS-referral' })
   },
   Layout,
 }
