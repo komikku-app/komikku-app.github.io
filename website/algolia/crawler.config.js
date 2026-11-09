@@ -40,7 +40,32 @@ new Crawler({
       // The crawler runs this function on its own, so it must not use anything declared outside of it.
       recordExtractor: ({ url, $, helpers }) => {
         const doc = $('.vp-doc')
-        // Pages without Markdown content (e.g. the home page, which is only a hero) have nothing to index.
+
+        // Pages with the `home` layout (the front page and each fork's page) keep their text in the hero
+        // and feature cards outside `.vp-doc`, and their team cards use an <h1> per member name.
+        // Rebuild them as plain paragraphs, so the page is indexed under its own title.
+        if ($('.VPHome').length) {
+          const block = $('<div></div>')
+          for (const text of [$('.VPHero .text').text(), $('.VPHero .tagline').text()]) {
+            if (text.trim()) {
+              block.append($('<p></p>').text(text.trim()))
+            }
+          }
+          $('.VPFeature').each((_, feature) => {
+            const title = $(feature).find('.title').text().trim()
+            const details = $(feature).find('.details').text().trim()
+            block.append($('<p></p>').text(details ? `${title}: ${details}` : title))
+          })
+          doc.prepend(block)
+
+          doc.find('.VPTeamMembersItem').each((_, member) => {
+            const name = $(member).find('.name').text().trim()
+            const role = $(member).find('.affiliation').text().trim()
+            $(member).replaceWith($('<p></p>').text(role ? `${name}: ${role}` : name))
+          })
+        }
+
+        // Pages without any content have nothing to index.
         if (!doc.text().trim()) {
           return []
         }
