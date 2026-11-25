@@ -157,12 +157,13 @@ async function generateMeta(context: TransformContext, hostname: string) {
   if (pageData.filePath.startsWith('changelogs/') && pageRelease) {
     const notes = (pageRelease.body ?? '').replace(/<!--[\s\S]*?-->/g, '')
     const noteLines = notes.split(/\r?\n/)
-    const firstSection = noteLines.findIndex(line => /^###\s/.test(line) && !line.startsWith('>'))
+    const firstSection = noteLines.findIndex(line => /^#{3,6}\s/.test(line))
     const sectionLines = noteLines.slice(firstSection < 0 ? 0 : firstSection)
-    const previousUpdate = sectionLines.findIndex(line => /^##\s+And in\b/i.test(line))
+    // Komikku release notes append the previous version under a heading like `#### v1.2.3`.
+    const previousUpdate = sectionLines.findIndex((line, index) => index > 0 && /^#{2,6}\s+(?:And in\b|v\d+\.\d+)/i.test(line))
     const patchNotes = sectionLines.slice(0, previousUpdate < 0 ? sectionLines.length : previousUpdate)
       .filter(line => !line.startsWith('>'))
-      .map(line => line.trimEnd())
+      .map(line => line.trimEnd().replace(/^#{4,6}\s/, '### '))
       .join('\n')
       .replace(/\n{3,}/g, '\n\n')
       .trim()
